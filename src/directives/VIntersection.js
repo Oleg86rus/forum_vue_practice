@@ -1,6 +1,7 @@
 export default  {
 	mounted(el, binding) {
-		console.log(el, binding)
+		console.log(el)
+		console.log(binding)
 		const options = {
 		  rootMargin: '0px',
 		  threshold: 1.0

@@ -88,7 +88,7 @@ export default {
         this.totalPages = Math.ceil(res.headers['x-total-count'] / this.limit)
         this.posts = res.data
       } catch (e) {
-        alert('Ошибка')
+        console.log(e.message)
       } finally {
         this.isPostLoading = false
       }
@@ -105,7 +105,7 @@ export default {
         this.totalPages = Math.ceil(res.headers['x-total-count'] / this.limit)
         this.posts = [...this.posts, ...res.data]
       } catch (e) {
-        alert('Ошибка')
+        console.log(e.message)
       }
     },
     // ------ пагинация ------
